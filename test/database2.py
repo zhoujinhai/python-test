@@ -3,9 +3,8 @@
 # 例子2 利用mysql-connector-python
 
 # 导入MySQL驱动
-import mysql.connector
 
-from io import IOBase
+import mysql.connector
 
 conn = mysql.connector.connect(host='localhost', user='root', password='z2457098495924', database='test')
 
