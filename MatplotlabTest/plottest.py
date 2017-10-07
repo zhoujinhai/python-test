@@ -4,12 +4,12 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # 画出正弦和余弦函数图像
-x = np.linspace(-np.pi, np.pi, 256, endpoint=True)
+x = np.linspace(-np.pi, np.pi, 30, endpoint=True)
 c, s = np.cos(x), np.sin(x)
 plt.figure(1)
 
-plt.plot(x, c, 'b-', lw=2.5, label='cos')
-plt.plot(x, s, 'g--', lw=2.5, label='sin')
+plt.plot(x, c, 'b-', marker='+', lw=2.5, label='cos')
+plt.plot(x, s, 'g--', marker='*', lw=2.5, label='sin')
 
 # 将坐标轴放中间
 ax = plt.gca()
